@@ -60,8 +60,8 @@ body {
   color: #333333;
 }
 
-.search__input:active {
-  border: none;
+.search__input:focus {
+  outline: none;
 }
 
 .search__button {
@@ -80,6 +80,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .user {
