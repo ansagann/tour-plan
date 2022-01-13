@@ -512,11 +512,13 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    max-width: 340px;
   }
 }
 
@@ -546,6 +548,7 @@ template {
     width: 16px;
     border: none;
     background-color: #fff;
+    padding: 0;
   }
   .menu-button__line {
     width: 16px;
