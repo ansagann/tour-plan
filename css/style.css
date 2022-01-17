@@ -566,6 +566,10 @@ template {
   margin: 0;
 }
 
+.hotel-grid {
+  padding-top: 20px;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -600,6 +604,50 @@ template {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper {
+  width: 728px;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+  margin: 0 !important;
+}
+
+.swiper::after {
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.swiper-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 100;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-button--prev {
+  left: 18px;
+  background-image: url("../img/chevron-left.svg");
+}
+
+.swiper-button--next {
+  right: 18px;
+  background-image: url("../img/chevron-right.svg");
 }
 
 @media screen and (max-width: 1200px) {
