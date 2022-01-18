@@ -1,5 +1,5 @@
 .hotel
-  padding: 23px 70px
+  padding: 23px 0
   &-info
     display: flex
     align-items: center
@@ -60,6 +60,11 @@
   position: relative
   border-radius: 8px
   margin: 0 !important
+  &-slide
+    &__image
+      height: 100%
+      width: 100%
+      object-fit: cover
   &::after
     content: ''
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
@@ -85,7 +90,7 @@
       background-image: url("../img/chevron-left.svg")
     &--next
       right: 18px
-      background-image: url("../img/chevron-right.svg")\
+      background-image: url("../img/chevron-right.svg")
 
 .booking
   border-radius: 8px
@@ -156,5 +161,6 @@
     cursor: pointer
 .map
   border-radius: 8px
-  max-width: 350px
+  width: 350px
   min-height: 210px
+  overflow: hidden
