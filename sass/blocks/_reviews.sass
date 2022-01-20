@@ -1,0 +1,101 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-slider
+    position: relative
+    &__item
+      background-color: #fff
+      border-radius: 8px
+      width: 700px
+      margin: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 45px
+      padding: 0 62px 30px
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        background-image: url("../img/quote-left.svg")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 70px
+        height: 48px
+        left: -20px
+        top: 70px
+      &::after
+        content: ''
+        position: absolute
+        z-index: 1
+        background-image: url("../img/quote-right.svg")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width: 70px
+        height: 48px
+        right: -20px
+        top: 55%
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $pink
+      margin: 0
+      margin-bottom: 10px
+    &__date
+      margin: 0
+      margin-bottom: 4px
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+    &__rating
+      display: flex
+      align-items: center
+      justify-content: space-around
+      width: 48px
+      margin-bottom: 32px
+    &__description
+      font-weight: normal
+      font-size: 12px
+      width: 537px
+      line-height: 160%
+      text-align: justify
+      position: relative
+      z-index: 2
+    &__button
+      position: absolute
+      z-index: 1000
+      top: 50%
+      border: none
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      height: 30px
+      width: 30px
+      &--prev
+        background-image: url("../img/arrow-prev.svg")
+        left: 0
+        cursor: pointer
+      &--next
+        background-image: url("../img/arrow-next.svg")
+        right: 0
+        cursor: pointer
