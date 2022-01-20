@@ -33,7 +33,10 @@
     width: 340px
   .map
     width: 340px
-
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -91,7 +94,25 @@
       align-items: start
     &__title
       margin-bottom: 37px
-
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__item
+        max-width: 580px
+        padding: 0 30px 30px
+      &__profile
+        &::before, &::after
+          display: none
+      &__button
+        top: 45px
+        left: 50%
+        transform: translate(-50%, 0)
+        &--next
+          margin-left: 65px
+        &--prev
+          margin-left: -65px
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -100,3 +121,7 @@
     margin-bottom: 20px !important
   .subscribe
     width: 100%
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px

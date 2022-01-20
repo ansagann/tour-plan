@@ -915,7 +915,7 @@ template {
 .reviews-slider__item {
   background-color: #fff;
   border-radius: 8px;
-  width: 700px;
+  max-width: 730px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,7 +1015,6 @@ template {
 .reviews-slider__description {
   font-weight: normal;
   font-size: 12px;
-  width: 537px;
   line-height: 160%;
   text-align: justify;
   position: relative;
@@ -1097,6 +1096,9 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1197,6 +1199,29 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__profile::before, .reviews-slider__profile::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    margin-left: 65px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -65px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1209,5 +1234,9 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
